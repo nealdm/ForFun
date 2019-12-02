@@ -45,7 +45,9 @@ def books(x,t,b):
     # set of books that they like.
     peoples_choises = [groups for groups in it.product(sets,repeat = x)]
 
-    for list in it.combinations(peoples_choises):
-        
+
+    # TODO: Figure out how to sort the sets correctly
+    # for list in it.combinations(peoples_choises):
+    #    list[0].intersections(list[1....])
 
     return(len(peoples_choises))
